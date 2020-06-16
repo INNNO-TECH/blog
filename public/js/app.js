@@ -1904,31 +1904,9 @@ module.exports = {
   !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/ExampleComponent.vue?vue&type=script&lang=js& ***!
   \***************************************************************************************************************************************************************************/
 /*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(module, exports) {
 
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-/* harmony default export */ __webpack_exports__["default"] = ({
-  mounted: function mounted() {
-    console.log('Component mounted.');
-  }
-});
+throw new Error("Module build failed (from ./node_modules/babel-loader/lib/index.js):\nSyntaxError: /opt/lampp/htdocs/blog/resources/js/components/ExampleComponent.vue: Unterminated string constant (23:20)\n\n\u001b[0m \u001b[90m 21 | \u001b[39m    }\u001b[33m,\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 22 | \u001b[39m    created () {\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 23 | \u001b[39m        console\u001b[33m.\u001b[39mlog(\u001b[32m'created);\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    | \u001b[39m                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 24 | \u001b[39m    }\u001b[0m\n\u001b[0m \u001b[90m 25 | \u001b[39m}\u001b[0m\n\u001b[0m \u001b[90m 26 | \u001b[39m\u001b[0m\n    at Parser._raise (/opt/lampp/htdocs/blog/node_modules/@babel/parser/lib/index.js:746:17)\n    at Parser.raiseWithData (/opt/lampp/htdocs/blog/node_modules/@babel/parser/lib/index.js:739:17)\n    at Parser.raise (/opt/lampp/htdocs/blog/node_modules/@babel/parser/lib/index.js:733:17)\n    at Parser.readString (/opt/lampp/htdocs/blog/node_modules/@babel/parser/lib/index.js:8423:20)\n    at Parser.getTokenFromCode (/opt/lampp/htdocs/blog/node_modules/@babel/parser/lib/index.js:8071:14)\n    at Parser.nextToken (/opt/lampp/htdocs/blog/node_modules/@babel/parser/lib/index.js:7598:12)\n    at Parser.next (/opt/lampp/htdocs/blog/node_modules/@babel/parser/lib/index.js:7526:10)\n    at Parser.parseSubscript (/opt/lampp/htdocs/blog/node_modules/@babel/parser/lib/index.js:9742:12)\n    at Parser.parseSubscripts (/opt/lampp/htdocs/blog/node_modules/@babel/parser/lib/index.js:9679:19)\n    at Parser.parseExprSubscripts (/opt/lampp/htdocs/blog/node_modules/@babel/parser/lib/index.js:9662:17)\n    at Parser.parseMaybeUnary (/opt/lampp/htdocs/blog/node_modules/@babel/parser/lib/index.js:9636:21)\n    at Parser.parseExprOps (/opt/lampp/htdocs/blog/node_modules/@babel/parser/lib/index.js:9506:23)\n    at Parser.parseMaybeConditional (/opt/lampp/htdocs/blog/node_modules/@babel/parser/lib/index.js:9479:23)\n    at Parser.parseMaybeAssign (/opt/lampp/htdocs/blog/node_modules/@babel/parser/lib/index.js:9434:21)\n    at Parser.parseExpression (/opt/lampp/htdocs/blog/node_modules/@babel/parser/lib/index.js:9386:23)\n    at Parser.parseStatementContent (/opt/lampp/htdocs/blog/node_modules/@babel/parser/lib/index.js:11285:23)\n    at Parser.parseStatement (/opt/lampp/htdocs/blog/node_modules/@babel/parser/lib/index.js:11156:17)\n    at Parser.parseBlockOrModuleBlockBody (/opt/lampp/htdocs/blog/node_modules/@babel/parser/lib/index.js:11731:25)\n    at Parser.parseBlockBody (/opt/lampp/htdocs/blog/node_modules/@babel/parser/lib/index.js:11717:10)\n    at Parser.parseBlock (/opt/lampp/htdocs/blog/node_modules/@babel/parser/lib/index.js:11701:10)\n    at Parser.parseFunctionBody (/opt/lampp/htdocs/blog/node_modules/@babel/parser/lib/index.js:10708:24)\n    at Parser.parseFunctionBodyAndFinish (/opt/lampp/htdocs/blog/node_modules/@babel/parser/lib/index.js:10691:10)\n    at Parser.parseMethod (/opt/lampp/htdocs/blog/node_modules/@babel/parser/lib/index.js:10653:10)\n    at Parser.parseObjectMethod (/opt/lampp/htdocs/blog/node_modules/@babel/parser/lib/index.js:10569:19)\n    at Parser.parseObjPropValue (/opt/lampp/htdocs/blog/node_modules/@babel/parser/lib/index.js:10611:23)\n    at Parser.parseObjectMember (/opt/lampp/htdocs/blog/node_modules/@babel/parser/lib/index.js:10535:10)\n    at Parser.parseObj (/opt/lampp/htdocs/blog/node_modules/@babel/parser/lib/index.js:10448:25)\n    at Parser.parseExprAtom (/opt/lampp/htdocs/blog/node_modules/@babel/parser/lib/index.js:10055:28)\n    at Parser.parseExprSubscripts (/opt/lampp/htdocs/blog/node_modules/@babel/parser/lib/index.js:9656:23)\n    at Parser.parseMaybeUnary (/opt/lampp/htdocs/blog/node_modules/@babel/parser/lib/index.js:9636:21)\n    at Parser.parseExprOps (/opt/lampp/htdocs/blog/node_modules/@babel/parser/lib/index.js:9506:23)\n    at Parser.parseMaybeConditional (/opt/lampp/htdocs/blog/node_modules/@babel/parser/lib/index.js:9479:23)\n    at Parser.parseMaybeAssign (/opt/lampp/htdocs/blog/node_modules/@babel/parser/lib/index.js:9434:21)\n    at Parser.parseExportDefaultExpression (/opt/lampp/htdocs/blog/node_modules/@babel/parser/lib/index.js:12358:24)\n    at Parser.parseExport (/opt/lampp/htdocs/blog/node_modules/@babel/parser/lib/index.js:12260:31)\n    at Parser.parseStatementContent (/opt/lampp/htdocs/blog/node_modules/@babel/parser/lib/index.js:11260:27)");
 
 /***/ }),
 
