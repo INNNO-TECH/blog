@@ -17,6 +17,11 @@ Route::get('/vue', function () {
     return view('vue_tuto');
 });
 
+Route::get('/test', function () {
+    return 'dsddassdf';
+});
+
+
 Route::get('/','PostController@index');
 Route::post('/store','PostController@store');
 Route::get('/delete/{id}','PostController@destroy');
