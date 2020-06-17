@@ -13,6 +13,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/vue', function () {
+    return view('vue_tuto');
 });
+
+Route::get('/','PostController@index');
+Route::post('/store','PostController@store');
+Route::get('/delete/{id}','PostController@destroy');
+Route::get('/edit/{id}','PostController@edit');
+Route::post('/edit/{id}','PostController@update');
