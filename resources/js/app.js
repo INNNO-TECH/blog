@@ -34,7 +34,7 @@ const app = new Vue({
     },
     methods: {
     },
-    computed() {
-        
+    created() {
+      console.log('testing')  
     }
 });

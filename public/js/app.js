@@ -49709,7 +49709,9 @@ var app = new Vue({
     message: 'I am Win Marn Oo'
   },
   methods: {},
-  computed: function computed() {}
+  created: function created() {
+    console.log('testing');
+  }
 });
 
 /***/ }),
