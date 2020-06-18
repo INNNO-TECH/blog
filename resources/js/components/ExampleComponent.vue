@@ -3,9 +3,8 @@
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card">
-                    <div class="card-header">Example Component</div>
                     <div class="card-body">
-                        I'm an example component.
+                        {{ eg }}
                     </div>
                 </div>
             </div>
@@ -18,8 +17,10 @@
         mounted() {
             console.log('Component mounted.')
         },
-        created () {
-            console.log('created')
+        data () {
+            return {
+                eg: 'i am Example component'
+            }
         }
     }
 </script>

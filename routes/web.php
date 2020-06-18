@@ -27,3 +27,11 @@ Route::post('/store','PostController@store');
 Route::get('/delete/{id}','PostController@destroy');
 Route::get('/edit/{id}','PostController@edit');
 Route::post('/edit/{id}','PostController@update');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+// testing api call from web.php
+
+Route::get('/test','PostController@test');

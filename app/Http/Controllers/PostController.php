@@ -40,4 +40,12 @@ class PostController extends Controller
         $post->delete();
         return redirect('/');
     }
+    /**
+     * test controlled which was used for api call in vuejs
+     */
+    public function test()
+    {
+        $posts=Post::all();//all out select * nae same    
+        return $posts;
+    }
 }
