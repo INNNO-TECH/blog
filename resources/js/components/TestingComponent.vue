@@ -1,7 +1,18 @@
 <template>
     <div>
-        <h1>opfipsaidfpisfd</h1>
-        <pre>{{ testData }}</pre>
+        <pre>{{ testingData }}</pre>
+        <table class="table">
+					<tr>
+						<th>ID</th>
+						<th>Post Name</th>
+						<th>Author</th>
+					</tr>
+					<tr v-for="testData in testingData" :key="testData.id">
+						<td>{{ testData.id }}</td>
+						<td>{{ testData. name }}</td>
+						<td>{{ testData.author }}</td>
+					</tr>
+				</table>
         {{ winmarnoo }}
     </div>
 </template>
@@ -9,7 +20,7 @@
     export default {
         data () {
             return {
-                testData: [],
+                testingData: [],
                 winmarnoo: 'I am Win Marn Oo'
             }
         },
@@ -17,7 +28,7 @@
             axios.get('/test') //call api call [ ----Route::get('/test','PostController@test');-----]
             .then (response => {
                 console.log(response)
-                this.testData = response.data
+                this.testingData = response.data
             })
         }
     }

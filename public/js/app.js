@@ -1951,10 +1951,21 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
-      testData: [],
+      testingData: [],
       winmarnoo: 'I am Win Marn Oo'
     };
   },
@@ -1964,7 +1975,7 @@ __webpack_require__.r(__webpack_exports__);
     axios.get('/test') //call api call [ ----Route::get('/test','PostController@test');-----]
     .then(function (response) {
       console.log(response);
-      _this.testData = response.data;
+      _this.testingData = response.data;
     });
   }
 });
@@ -37551,13 +37562,43 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", [
-    _c("h1", [_vm._v("opfipsaidfpisfd")]),
+    _c("pre", [_vm._v(_vm._s(_vm.testingData))]),
     _vm._v(" "),
-    _c("pre", [_vm._v(_vm._s(_vm.testData))]),
-    _vm._v("\n    " + _vm._s(_vm.winmarnoo) + "\n")
+    _c(
+      "table",
+      { staticClass: "table" },
+      [
+        _vm._m(0),
+        _vm._v(" "),
+        _vm._l(_vm.testingData, function(testData) {
+          return _c("tr", { key: testData.id }, [
+            _c("td", [_vm._v(_vm._s(testData.id))]),
+            _vm._v(" "),
+            _c("td", [_vm._v(_vm._s(testData.name))]),
+            _vm._v(" "),
+            _c("td", [_vm._v(_vm._s(testData.author))])
+          ])
+        })
+      ],
+      2
+    ),
+    _vm._v("\n        " + _vm._s(_vm.winmarnoo) + "\n    ")
   ])
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("tr", [
+      _c("th", [_vm._v("ID")]),
+      _vm._v(" "),
+      _c("th", [_vm._v("Post Name")]),
+      _vm._v(" "),
+      _c("th", [_vm._v("Author")])
+    ])
+  }
+]
 render._withStripped = true
 
 
